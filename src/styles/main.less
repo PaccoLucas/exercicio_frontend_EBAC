@@ -1,0 +1,57 @@
+@fontePrincipal:'Righteous', cursive;
+@corDeFundo: dimgray;
+@corDeFundoInput: #fff;
+@corDoBotao:red;
+@corDoTexto: #fff;
+@corDoHover: rgb(245, 87, 87);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontePrincipal;
+    background-color: @corDeFundo;
+}
+
+.container {
+    margin: 160px auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+form {
+    margin-top: 40px;
+
+    input {
+        background-color: @corDeFundoInput;
+        display: block;
+        padding: 8px;
+        margin-bottom: 8px;
+        width: 100%;
+        resize: none;
+    }
+
+    button {
+        background-color: @corDoBotao;
+        border: none;
+        text-transform: uppercase;
+        color: @corDoTexto;
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        cursor: pointer;
+        display: block;
+        padding: 8px;
+        margin-bottom: 8px;
+        width: 100%;
+        resize: none;
+
+        &:hover {
+            background-color: @corDoHover;
+        }
+    }
+}
+
+
+
+
+
